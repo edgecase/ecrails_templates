@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.version     = EcrailsTemplates::VERSION
   s.authors     = ["Adrian Mowat"]
   s.email       = ["adrian@edgecase.com"]
-  s.homepage    = "www.edgecase.com"
+  s.homepage    = "http://edgecase.com/"
   s.summary     = %q{EdgeCase UK rails templates and other stuff}
   s.description = %q{EdgeCase UK rails templates and other stuff}
 
