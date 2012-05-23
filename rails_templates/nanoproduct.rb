@@ -18,6 +18,7 @@ def run_recipe(recipe); apply File.join(@recipes, recipe); end
   'leftovers',
   'git'
 ].each do |recipe|
+  say "Running recipe #{recipe} ...", :yellow
   run_recipe "#{recipe}.rb"
 end
 

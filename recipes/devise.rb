@@ -1,7 +1,6 @@
 gem 'devise', '~> 2.0.4'
 
 after_bundler do
-  say "Installing devise ...", :yellow
   generate 'devise:install', '-q'
   model_name = ask("What would you like the user model to be called? [DEFAULT: user]", :yellow)
   model_name = "user" if model_name.blank?
