@@ -4,5 +4,6 @@ end
 
 after_bundler do
   generate "rspec:install"
+  run 'rm -Rf test'
 end
 
