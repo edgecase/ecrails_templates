@@ -2,9 +2,8 @@
 
 Put your elevator pitch here.
 
+
 ## Technology
-
-
 (see Gemfile for rest)
 
 
@@ -18,5 +17,4 @@ Put your elevator pitch here.
 
 
 ## How to deploy
-
 
