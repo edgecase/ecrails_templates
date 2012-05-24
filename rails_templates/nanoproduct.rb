@@ -24,7 +24,6 @@ RECIPES = [
 ]
 
 RECIPES.each do |recipe|
-  say "Running recipe #{recipe} ...", :yellow
   run_recipe recipe
 end
 

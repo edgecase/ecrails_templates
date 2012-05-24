@@ -17,6 +17,7 @@ def after_readme(&block)
 end
 
 def run_recipe(recipe)
+  say "Running recipe #{recipe} ...", :yellow
   apply File.join(RECIPES_ROOT, "#{recipe}.rb")
 end
 
