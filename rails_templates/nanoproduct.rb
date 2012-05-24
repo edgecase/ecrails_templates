@@ -2,6 +2,7 @@ RECIPES_ROOT = 'https://raw.github.com/edgecase/ecrails_templates/master/recipes
 TEMPLATES_ROOT = File.join(RECIPES_ROOT, '..', 'templates')
 
 @after_bundler = []
+@after_readme  = []
 
 # setup required recipes
 RECIPES = [
@@ -19,6 +20,7 @@ RECIPES = [
   'markdown',
   'error_reporting',
   'heroku',
+  'README',
   'leftovers',
   'git'
 ]
@@ -29,6 +31,10 @@ end
 
 def after_bundler(&block)
   @after_bundler << block
+end
+
+def after_readme(&block)
+  @after_readme << block
 end
 
 def run_recipe(recipe)
