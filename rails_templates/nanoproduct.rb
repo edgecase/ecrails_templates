@@ -58,7 +58,7 @@ end
 def add_to_readme(section, text)
   after_readme do
     inject_into_file 'README.md', :after => "## #{section}\n\n" do
-      "#{text}\n"
+      "* #{text}\n"
     end
   end
 end
