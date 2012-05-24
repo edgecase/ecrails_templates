@@ -16,6 +16,7 @@ RECIPES = [
   'twitter',
   'facebook',
   'markdown',
+  'file_upload',
   'error_reporting',
   'leftovers',
   'git',
@@ -28,13 +29,13 @@ RECIPES.each do |recipe|
 end
 
 # run bundler and then all the after_bundler blocks
-say "Running bundler ..."
+say "Running bundler ...", :yellow
 
 run "bundle install"
 @after_bundler.each {|b| b.call}
 
 # build README file
-say "Building README ..."
+say "Building README ...", :yellow
 
 run 'rm README.rdoc'
 get File.join(TEMPLATES_ROOT, 'README.md'), 'README.md'

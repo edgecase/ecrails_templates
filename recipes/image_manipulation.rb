@@ -1,3 +1,6 @@
+gem 'rmagick',      '~> 2.13.1'
+gem 'mini_magick',  '~> 3.4'
+
 after_bundler do
   add_to_readme 'Technology', %Q{
 ### ImageMagick, RMagick, Mini-Magick Oh My!
