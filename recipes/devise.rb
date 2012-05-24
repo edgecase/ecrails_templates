@@ -7,7 +7,7 @@ after_bundler do
   generate "devise", model_name
   application "config.action_mailer.default_url_options = { :host => 'localhost:3000' }"
   application "config.assets.initialize_on_precompile = false", :env => "production"
-  add_to_readme 'Technology', "Using Devise on model '#{model_name}'"
+  add_to_readme 'Technology', "\n###Devise\n\nUsing Devise on model '#{model_name}'"
 end
 
 
