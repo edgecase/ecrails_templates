@@ -5,7 +5,7 @@ end
 after_bundler do
   generate "rspec:install"
   run 'rm -Rf test'
-  add_to_readme 'Testing', 'bundle exec rspec'
+  add_to_readme 'Testing', "```bash\nbundle exec rspec\n```"
 end
 
 

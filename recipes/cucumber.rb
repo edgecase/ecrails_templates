@@ -4,7 +4,7 @@ end
 
 after_bundler do
   generate 'cucumber:install'
-  add_to_readme "Testing", "bundle exec cucumber"
+  add_to_readme "Testing", "```bash\nbundle exec cucumber\n```"
 end
 
 

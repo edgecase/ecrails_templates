@@ -57,7 +57,7 @@ end
 def add_to_readme(section, text)
   after_readme do
     inject_into_file 'README.md', :after => "## #{section}\n\n" do
-      "* #{text}\n\n"
+      "#{text}\n\n"
     end
   end
 end
@@ -78,6 +78,6 @@ get File.join(TEMPLATES_ROOT, 'README.md'), 'README.md'
 @after_readme.each {|b| b.call}
 
 inject_into_file 'README.md', :after => "## Technology\n\n" do
-  %Q{* Ruby #{RUBY_VERSION}\n* Rails #{Rails::VERSION::STRING}\n}
+  %Q{* Ruby #{RUBY_VERSION}\n* Rails #{Rails::VERSION::STRING}\n\n}
 end
 
