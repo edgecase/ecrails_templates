@@ -55,6 +55,14 @@ def add_generator(name)
   )
 end
 
+def add_to_readme(section, text)
+  after_readme do
+    inject_into_file 'README', :after => "## #{section}\n\n" do
+      "#{text}\n"
+    end
+  end
+end
+
 RECIPES.each do |recipe|
   say "Running recipe #{recipe} ...", :yellow
   run_recipe recipe

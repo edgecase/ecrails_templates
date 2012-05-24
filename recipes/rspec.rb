@@ -7,3 +7,5 @@ after_bundler do
   run 'rm -Rf test'
 end
 
+add_to_readme 'Testing', 'bundle exec rspec'
+

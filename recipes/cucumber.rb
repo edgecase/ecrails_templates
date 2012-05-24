@@ -6,3 +6,5 @@ after_bundler do
   generate 'cucumber:install'
 end
 
+add_to_readme "Testing", "bundle exec cucumber"
+
