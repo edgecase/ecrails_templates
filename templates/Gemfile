@@ -20,7 +20,3 @@ end
 
 gem "jquery-rails"
 
-gem 'friendly_id'
-gem 'decent_exposure'
-gem 'state_machine', '~> 1.1.2'
-
